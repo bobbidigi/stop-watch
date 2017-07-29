@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>stop watch</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="container-fluid">
+          <div id="header">Stopwatch</div>
+      
+      <!--Lap Time-->
+      <div id="lap"><span id="lapminute">00</span>:<span id="lapsecond">00</span>:<span id="lapcentisecond">00</span></div>
+      
+      <!--Time-->
+      <div id="time"><span id="timeminute">00</span>:<span id="timesecond">00</span>:<span id="timecentisecond">00</span></div>
+      
+      <!--Controls-->
+      <div id="controlsContainer" class="row">
+          <div class="col-xs-2 col-xs-offset-4">
+              <div id="startButton" class="control">
+                  Start
+              </div>
+              <div id="stopButton" class="control">
+                  Stop
+              </div>
+              <div id="resumeButton" class="control">
+                  Resume
+              </div>
+          </div>
+          <div class="col-xs-2">
+              <div id="lapButton" class="control">
+                  Lap
+              </div>
+              <div id="resetButton" class="control">
+                  Reset
+              </div>
+          </div>
+      </div>
+          
+        <!--Laps-->
+        <div id="laps"></div>  
+      
+</div>
+<!--footer   -->
+  
+   <div class="footer">
+   	<div class="container">
+			<p>&copy; Developed by  <a id="ra" href="https://bobbidigi.github.io"> R Allen</a></p>
+   	</div>
+<!-- profilecard  	-->
+   	<aside class="profile-card">
+    <header>
+      <a><img id="profile" src="https://avatars3.githubusercontent.com/u/20561145?v=3&s=460"></a>
+      <div>
+      <h1>Robert Allen</h1>
+      </div>  
+    </header>
+  
+    <div class="profile-bio">
+      <p>I'm a <strong>frontend web developer </strong>. Making some cool things with coffee <i class="fa fa-coffee " aria-hidden="true" ></i> and code.</p>
+      
+      <ul class="social-icons list-unstyled list-inline">
+        <li><a href="https://www.linkedin.com/in/robert-allen-44020778"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://codepen.io/bobbidigi34/"><i class="fa fa-codepen"></i></a></li>
+        <li><a href="https://github.com/bobbidigi"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com/bobbidigi0"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+ 		</aside>
+   	</div>   
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="stopwatch.js"></script>
+  </body>
+</html>
